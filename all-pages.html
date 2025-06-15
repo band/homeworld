@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/myLocalWorld/lunr-index-1750016394.1800709.js"></script>
+    <script src="/myLocalWorld/lunr-index-1750016706.5239563.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/myLocalWorld/lunr-posts-1750016394.1800709.js"></script>
+    <script src="/myLocalWorld/lunr-posts-1750016706.5239563.js"></script>
     <script> function randomPageLink() { return "/myLocalWorld"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
@@ -32,12 +32,21 @@
         <button id="hide-btn">Hide</button> <button id="move-btn"
         class="hidden">Move to Sidebar</button>
       </div>
-      <h2>Site Navigation</h2>
-<p><a class="wikilink" href="/myLocalWorld/README.html">HOME</a></p>
-<p><a href="/myLocalWorld/all-pages.html">ALL PAGES</a><br />
-<a href="/myLocalWorld/recent-pages.html">RECENT CHANGES</a><br />
-<a href="/myLocalWorld/search.html">SEARCH</a></p>
-<h4>Selected Content</h4>
+      <h3>Site Navigation</h3>
+<div class="navlinks">
+<ul>
+<li><a class="wikilink" href="/myLocalWorld/README.html">HOME</a></li>
+<li><a href="/myLocalWorld/search.html">SEARCH</a></li>
+<li><a href="/myLocalWorld/all-pages.html">ALL PAGES</a></li>
+<li><a href="/myLocalWorld/recent-pages.html">RECENT CHANGES</a></li>
+</ul>
+</div>
+<div class="navlinks">
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+</div>
+<h4>Selected content</h4>
 <p><a class="wikilink" href="/myLocalWorld/theLibrary/Beth_Sawin.html">Beth Sawin</a><br />
 <a class="wikilink" href="/myLocalWorld/Italo_Calvino_-_notes_on_Six_Memos.html">Italo Calvino - notes on Six Memos</a></p>
 
@@ -214,14 +223,6 @@
             <tr>
               <td>
                 <a href="/myLocalWorld/Show_me_a_picture.html">Show me a picture</a>
-              </td>
-              <td>inital commit</td>
-              <td>William L. Anderson</td>
-              <td>2025-06-15, 14:48</td>
-            </tr>
-            <tr>
-              <td>
-                <a href="/myLocalWorld/Sidebar-new.html">Sidebar-new</a>
               </td>
               <td>inital commit</td>
               <td>William L. Anderson</td>
