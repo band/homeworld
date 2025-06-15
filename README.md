@@ -1,8 +1,8 @@
-# my Home World
+# my Home World Wiki
 
-This is the README page about my HomeWorkd wiki.
+![[paPier2012.jpg]]
+Port Aransas, Texas, 2012  
 
-There is a [[Sandbox]] page if you want to try stuff out.
-
-[[Ways to wiki here]]
+[[Ways to wiki here]]  
+There is a [[Sandbox]] page if you want to try stuff out.  
 
