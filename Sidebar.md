@@ -1,12 +1,19 @@
-## Site Navigation
+### Site Navigation
 
-[[README|HOME]]  
+{< div class="navlinks" >}
+- [[README|HOME]]
+- [SEARCH](/search.html)  
+- [ALL PAGES](/all-pages.html)  
+- [RECENT CHANGES](/recent-pages.html)
+{< /div >}
 
-[ALL PAGES](/all-pages.html)  
-[RECENT CHANGES](/recent-pages.html)   
-[SEARCH](/search.html)  
-#### Selected Content
+{< div class="navlinks" >}
+  <button onclick="location.href=`${randomPageLink()}`">
+    RANDOM PAGE
+  </button>
+{< /div >}
+
+#### Selected content  
 
 [[Beth Sawin]]    
 [[Italo Calvino - notes on Six Memos]]
-
