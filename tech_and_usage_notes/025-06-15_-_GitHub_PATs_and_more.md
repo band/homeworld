@@ -4,7 +4,7 @@
 - What confuses me is building a mental model of where credentials are stored, used, modified, etc.
 
 - What I did today:  
-	- apparently re-generated the "bluesky-comment" PAT
+	- apparently re-generated the "bsky-comments" PAT
 	- installed `git-credential-manager`
 		- this seems to have removed an existing gitPAT from `.git-credentials`
 		- DONE: recover old file from TimeMachine (and put aside)

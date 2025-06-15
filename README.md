@@ -1,12 +1,8 @@
-# my local world(s)
+# my Home World
 
-This is the README page about my localWorld wiki.
+This is the README page about my HomeWorkd wiki.
 
 There is a [[Sandbox]] page if you want to try stuff out.
 
-## Ways To Wiki Here
-
-- [[_docs/Page History in YAML Frontmatter]]
-- [[_docs/Adding a Comment to a Page]]
-
+[[Ways to wiki here]]
 
