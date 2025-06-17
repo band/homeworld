@@ -4,5 +4,4 @@
 Port Aransas, Texas, 2012  
 
 [[Ways to wiki here]]  
-There is a [[Sandbox]] page if you want to try stuff out.  
 
