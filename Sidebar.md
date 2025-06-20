@@ -13,7 +13,7 @@
   </button>
 {< /div >}
 
-#### Selected content  
+### Selected content  
 
 [[Beth Sawin]]    
 [[Italo Calvino - notes on Six Memos]]
