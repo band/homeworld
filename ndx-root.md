@@ -6,4 +6,4 @@
 - [[Peter Cornell - The Ways of Paradise]] *(10/10/2024, 10:14:27 AM)*
 - [[A.R. Moxon - What is a socialist]] *(5/29/2024, 1:21:29 PM)*
 
-*This list contains 5 files and was last updated on 6/29/2025, 8:15:43 AM*
+*This list contains 5 files and was last updated on 6/30/2025, 1:49:17 PM*
