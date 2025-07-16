@@ -1,4 +1,4 @@
-{% set page_title = 'All Pages - ' ~ wiki_title %}{% include '_header.html' %}
+{% set page_title = title ~ ' - ' ~ wiki_title if title != 'README' else wiki_title %}{% include '_header.html' %}
 <body>
   <div class="container">
     <section class="header">
@@ -6,10 +6,7 @@
     </section>
     {% include '_navbar.html' %}
     <div class="value-props row">
-      <h2>All Pages</h2>
-      {% for page in pages %}
-      <p><a href="{{page.path}}">{{page.title}}</a></p>
-      {% endfor %}
+      {{ markdown_body }}
     </div>
     {% include '_footer.html' %}
   </body>
