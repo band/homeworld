@@ -17,6 +17,7 @@ node_modules
 
 # MARKPUB
 .markpub/output/*
+.markpub/output*/*
 
 # baseline gitignore for MARKPUB
 # for Obsidian.md vaults
