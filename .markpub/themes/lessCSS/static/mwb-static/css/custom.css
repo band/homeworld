@@ -18,6 +18,11 @@
 .navbar {
   display: none; }
 
+div.value-props img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
 /* Larger than phone */
 @media (min-width: 550px) {
   .header {
