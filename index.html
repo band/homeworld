@@ -4,47 +4,48 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="fs_path" content="">
-    
     <title>Home World</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
--->
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/myLocalWorld/markpub-static/css/style.css">
-    <link rel="stylesheet"
-	  href="/myLocalWorld/markpub-static/css/custom.css">
-<!-- CSS
-    <link rel="stylesheet" href="/myLocalWorld/markpub-static/css/normalize.css">
-    <link rel="stylesheet" href="/myLocalWorld/markpub-static/css/skeleton.css">
-    <link rel="stylesheet" href="/myLocalWorld/markpub-static/css/skcustom.css">
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS replaced with custom utility classes in style.css -->
+    <link rel="stylesheet" href="/myLocalWorld/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/myLocalWorld/markpub_static/css/elysium.css">
+    <link rel="stylesheet" href="/myLocalWorld/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
-    <script src="/myLocalWorld/lunr-index-1754920251.0107205.js"></script>
+    <script src="/myLocalWorld/lunr-index-1758403357.17015.js"></script>
     <script>var index = lunr.Index.load(lunr_index)</script>
     
     
-    <script src="/myLocalWorld/lunr-posts-1754920251.0107205.js"></script>
+    <script src="/myLocalWorld/lunr-posts-1758403357.17015.js"></script>
     <script> function randomPageLink() { return "/myLocalWorld"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
     
   </head>
-<body>
-  <div id="header">
+<body class="font-roboto text-gray-800 bg-gray-50 leading-relaxed">
+  <!-- Header -->
+    <div id="header">
     <span id="hamburger-btn"
-    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/myLocalWorld/index.html">Home World</a>
+    class="hidden">&#9776;</span><a class="button is-light" id="header-link" href="/myLocalWorld/index.html" style="color: black;">Home World</a>
   </div>
 
-  <div class="container" id="flex-container">
-    <div id="side-column">
-      <div>
-        <button id="hide-btn">Hide</button>
-        <button id="move-btn" class="hidden">Move to Sidebar</button>
+  <!-- Main Container -->
+  <div id="flex-container" class="flex max-w-full px-4 sm:px-6 lg:px-8">
+    <!-- Sidebar -->
+    <aside id="side-column" class="bg-white min-w-48 max-h-[80vh] p-5
+				   mr-4 overflow-y-auto border-r
+				   border-gray-300 shadow-sm rounded-md">
+      <div class="mb-4">
+        <button id="hide-btn" class="px-3 py-1 text-xs uppercase tracking-wider font-trebuchet bg-blue-100 text-gray-700 border border-blue-200 rounded-md hover:bg-blue-200 transition-colors mr-2">
+          Hide
+        </button>
+        <button id="move-btn" class="hidden px-3 py-1 text-xs uppercase tracking-wider font-trebuchet bg-blue-100 text-gray-700 border border-blue-200 rounded-md hover:bg-blue-200 transition-colors">
+          Move to Sidebar
+        </button>
       </div>
-      <h3>Site Navigation</h3>
+      <div class="sidebar-content">
+        <h3>Site Navigation</h3>
 <div class="navlinks">
 <ul>
 <li><a class="wikilink" href="/myLocalWorld/README.html">HOME</a></li>
@@ -62,26 +63,31 @@
 <p><a class="wikilink" href="/myLocalWorld/theLibrary/Beth_Sawin.html">Beth Sawin</a><br />
 <a class="wikilink" href="/myLocalWorld/Italo_Calvino_-_notes_on_Six_Memos.html">Italo Calvino - notes on Six Memos</a></p>
 
-    </div>
+      </div>
+    </aside>
 
-    <div id="main-column">
+    <!-- Main Content -->
+    <main id="main-column" class="max-w-3xl bg-white px-5 py-0 pb-5 flex-grow ml-8 shadow-sm rounded-lg">
       
-      <h1>my Home World Wiki</h1>
+      
+      <div class="prose prose-gray max-w-none">
+        <h1>my Home World Wiki</h1>
 <p><img src="/myLocalWorld/_attachments/paPier2012.jpg" alt="an image with no alt text" />
 Port Aransas, Texas, 2012</p>
 <p>This wiki contains some notes on technical and home-oriented matters. There is a sprinkling of other notes containing reading excerpts and some emerging thinking.<br />
 <a class="wikilink" href="/myLocalWorld/tech_and_usage_notes/Ways_to_wiki_here.html">Ways to wiki here</a></p>
 
+      </div>
       
-    </div>
+      
+    </main>
   </div>
-  <data id="file-path-data" value=""></data>
-  <script src="/myLocalWorld/markpub-static/js/script.js"></script>
+  <script src="/myLocalWorld/markpub_static/js/script.js"></script>
   
-  <footer class="footer">
-  <div class="content has-text-centered">
+  <footer class="bg-gray-100 py-8 mt-12">
+  <div class="text-center text-gray-600 space-y-1">
     
-    <div><strong>Home World</strong> by (oh no) mr. bill.</div>
+    <div><strong class="font-semibold text-gray-800">Home World</strong> by (oh no) mr. bill.</div>
     
     
     <div>Central repository at <a href="https://github.com/band/homeworld">homeworld</a>.</div>
@@ -89,7 +95,7 @@ Port Aransas, Texas, 2012</p>
     
     <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
     
-    <div><em>Site last updated on Monday, August 11, 2025 at 13:50 UTC.</em></div>
+    <div class="text-sm italic">Site last updated on Saturday, September 20, 2025 at 21:22 UTC.</div>
   </div>
 </footer>
 </body>
