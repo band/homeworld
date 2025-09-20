@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if fs_path != '' %}
+    <meta name="fs_path" content="{{ fs_path }}">
+    {% endif %}
+    <title>{{ page_title }}</title>
+  <!-- FONT     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <!-- CSS      –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="/markpub_static/css/littlecss.css">
+    <link rel="stylesheet" href="/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.css">
+    {% if lunr_index_sitepath != '' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="{{lunr_index_sitepath}}"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    {% endif %}
+    {% if lunr_posts_sitepath != '' %}
+    <script src="{{lunr_posts_sitepath}}"></script>
+    {% endif %}
+  </head>

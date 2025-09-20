@@ -1,0 +1,49 @@
+{% set page_title = title ~ ' - ' ~ wiki_title if title != 'README' else wiki_title %}{% include '_header.html' %}
+<body>
+  <div class="container">
+    <section class="header">
+      <h1 class="title">{{ wiki_title }}</h1>
+    </section>
+    {% include '_navbar.html' %}
+    <div class="value-props row">
+      {{ markdown_body }}
+      {% if backlinks %}
+      <hr>
+      <div>
+	<h5>Pages that link to this page</h5>
+	<ul>
+	  {% for link in backlinks %}
+	  <li><a href="{{websiteroot}}{{link[0]}}">{{link[1]}}</a>
+	    {% endfor %}
+	</ul>
+      </div>
+      {% endif %}
+    </div>
+    {% if bluesky_comments_post %}
+    <div id="bluesky-comments"></div>
+    <script type="importmap">
+      {
+	"imports": {
+	  "react": "https://esm.sh/react@18",
+	  "react-dom/client": "https://esm.sh/react-dom@18"
+	}
+      }
+    </script>
+    <script type="module">
+      import { createElement } from 'react'
+      import { createRoot } from 'react-dom/client'
+      import { BlueskyComments } from 'https://unpkg.com/bluesky-comments@0.9.0/dist/bluesky-comments.es.js'
+
+      const uri = '{{bluesky_comments_post}}'
+      const container = document.getElementById('bluesky-comments')
+      const root = createRoot(container)
+      root.render(
+	createElement(BlueskyComments, {
+	  "uri": uri,
+	})
+      )
+    </script>
+    {% endif %}
+    {% include '_footer.html' %}
+</body>
+</html>
