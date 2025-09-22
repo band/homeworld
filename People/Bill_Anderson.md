@@ -11,7 +11,7 @@ phones:
 short-name: Bill
 sortable-name: Anderson, Bill
 socials: https://hachyderm.io/@band
-matrix: @anderbill:matrix.org
+matrix: "@anderbill:matrix.org"
 discord: anderbill#9242
 urls:
   - https://about.me/wlanderson/
@@ -29,16 +29,16 @@ I am also reviewing my childhood first-order learnings about how the world works
 
 Email: band@acm.org
 
-Alternate email: band@praxis101.net
+Alternate email: band@praxis101.net  
 
-Phone | SMS: +1 512-693-7378
+Phone | SMS: +1 512-693-7378  
 
-Basic landing page (kinda old): https://about.me/wlanderson
+Basic landing page (kinda old): https://about.me/wlanderson  
 
-The Socials: <https://hachyderm.io/@band>
+The Socials: <https://hachyderm.io/@band>  
 
-Matrix: @anderbill:matrix.org
+Matrix: @anderbill:matrix.org  
 
-Discord: anderbill#9242
+Discord: anderbill#9242  
 
 
