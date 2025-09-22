@@ -76,7 +76,7 @@ header{
     box-shadow: 0 6px 18px color-mix(in srgb, var(--brand) 35%, transparent);
 }
 .brand span{
-    font-weight:400; letter-spacing:.2px; font-size:3.25rem; color: var(--text);
+    font-weight:400; letter-spacing:.2px; font-size:2.75rem; color: var(--text);
 }
 .nav-spacer{flex:1}
 .nav a{
