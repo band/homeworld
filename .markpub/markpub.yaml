@@ -8,6 +8,7 @@ license: <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons 
 recent_changes_count: 5
 sidebar: Sidebar.md
 theme: forte
-no_edit_url_pages: null
+no_edit_url_pages:
+  - ndx-*.md
 excluded_directories:
   - test_pages
