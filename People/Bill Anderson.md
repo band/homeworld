@@ -27,7 +27,7 @@ I am also reviewing my childhood first-order learnings about how the world works
 
 ## Contact Me
 
-Email: band@acm.org
+Email: band@fastmail.com
 
 Alternate email: band@praxis101.net  
 
