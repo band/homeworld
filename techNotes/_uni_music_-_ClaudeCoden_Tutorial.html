@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_uni_music - ClaudeCoden Tutorial - Home World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS replaced with custom utility classes in style.css -->
+    <link rel="stylesheet" href="/myLocalWorld/markpub_static/css/style.css">
+    <link rel="stylesheet" href="/myLocalWorld/markpub_static/css/custom.css">
+    <link rel="stylesheet" href="/myLocalWorld/markpub_static/css/elysium.css">
+    <link rel="stylesheet" href="https://unpkg.com/bluesky-comments@0.12.0/dist/bluesky-comments.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+    <script src="/myLocalWorld/lunr-index-1768836494.7746046.js"></script>
+    <script>var index = lunr.Index.load(lunr_index)</script>
+    
+    
+    <script src="/myLocalWorld/lunr-posts-1768836494.7746046.js"></script>
+    <script> function randomPageLink() { return "/myLocalWorld"+lunr_posts[Math.floor(Math.random() * lunr_posts.length)].link; } </script>
+  
+  </head>
+<body class="font-roboto text-gray-800 bg-gray-50 leading-relaxed">
+  <!-- Header -->
+    <header>
+    <div class="container nav">
+      <a class="brand" href="/myLocalWorld/index.html">
+	<span>Home World</span>
+      </a>
+      <div class="nav-spacer"></div>
+      <nav class="nav-items" aria-label="Primary">
+        <a href="/">HOME</a>
+        <span aria-hidden="true" class="px-3">·</span>
+        <a href="/all-pages.html">All Pages</a>
+        <span aria-hidden="true" class="px-3">·</span>
+        <a href="/recent-pages.html">Recent Pages</a>
+        <span aria-hidden="true" class="px-3">·</span>
+        <a href="/search.html">Search</a>
+        <span aria-hidden="true" class="px-3">·</span>
+	<button onclick="location.href=`${randomPageLink()}`">
+	  RANDOM PAGE
+	</button>
+      </nav>
+    </div>
+  </header>
+  <!-- Main Container -->
+   <!-- Main Content -->
+    <div class="container hero">
+      
+      <div class="flex justify-end mb-4 pt-4">
+        <a target="_blank" href="https://github.com/band/homeworld/edit/main/techNotes/_uni_music - ClaudeCoden Tutorial.md" 
+           class="inline-block px-3 py-1 bg-blue-100 border border-blue-200 text-gray-700 text-sm font-trebuchet rounded-lg hover:bg-blue-200 transition-colors no-underline">
+          Edit on GitHub
+        </a>
+      </div>
+      
+    </div>
+    
+    <main class="container">
+      <div class="prose prose-gray max-w-none">
+        <h1>_uni_music Claude Code Tutorial</h1>
+<p>by _uni_music (https://www.threads.com/@_uni_music)</p>
+<p>The complete Claude Code tutorial.<br />
+Link: <a href="mailto:https://www.threads.com/@_uni_music/post/DTpMoTYAozi?xmt=AQF00wJs_qUhMecnPYSNrv1nqlATQt8KEeHXjF0Vi44cNA">https://www.threads.com/@_uni_music/post/DTpMoTYAozi?xmt=AQF00wJs_qUhMecnPYSNrv1nqlATQt8KEeHXjF0Vi44cNA</a><br />
+N.B.: some copyedits by <a href="https://hachyderm.io/@band">band</a></p>
+<p>The number 1 mind shift most people miss.<br />
+Think first, type later.</p>
+<p>Jumping straight into prompts usually backfires. Hit Shift + tab twice to activate the plan mode — spend those 5 minutes thinking deeply. Outputs dramatically because the input is cleaner.</p>
+<p>No deep engineering background? Chat back-and-forth with an LLM first: describe the goal, explore options, ask questions, settle on architecture. This habit alone levels up everything you build next...</p>
+<p>....which brings us to architecture — the hidden multiplier.<br />
+Vague asks like "build an auth system" invite over-engineering or weird choices. Be surgical:</p>
+<p>"Build email/password auth using the existing User model, store sessions in Redis (24h expiry), add middleware for /api/protected routes"</p>
+<p>Specific architecture + constraints = clean, production-ready code.<br />
+Skip this and you will debug for hours. Plan mode is your best friend here.</p>
+<p>Now meet your secret weapon: CLAUDE.md<br />
+Claude reads this file automatically at session start — it is permanent project memory. Keep it short (150-200 instructions max), project-specific and explain why behind every rules to give it more context about the instructions.</p>
+<p>Example:<br />
+"Use TypeScript strict mode because we have had prod bugs from implicit any types". The "why" helps Claude make smart judgment calls.</p>
+<p>Update it constantly as the conversation proceeds — it evolves with your codebase.</p>
+<p>Context is gold, but it degrades fast.<br />
+Even with huge context windows, quality drops noticeably around 20-40% usage. Do not let one mega-conversation handle auth + DB + UI.<br />
+Keep each conversation scope tight: one chat per feature/task. Use external file like SCRATCHPAD.md or plan.md for durable progress.<br />
+Remember: Fresh context = sharp Claude Code performance.</p>
+<p>Prompting is communication skill — master it.<br />
+Bad input = bad output.</p>
+<ol>
+<li>Be hyper-specific, list what NOT to do you can use these:</li>
+</ol>
+<ul>
+<li>Keep simple, no extra abstractions, one file if possible.</li>
+</ul>
+<ol start="2">
+<li>Give constraints; e.g.:  "This runs on every request — prioritize speed", and provide why.</li>
+</ol>
+<p>Cross-check outputs — Claude still makes mistakes. Recognize them early ,iterate and keep updating CLAUDE.md .</p>
+<p>If results suck consistently, fix your prompting before blaming the model.</p>
+<p>Model choice matters too.</p>
+<ol>
+<li>Sonnet: fast, cheap, great for clear-path execution (boilerplate, refactoring).</li>
+<li>Opus: slower, pricier, excels at deep reasoning, planning, tradeoffs.</li>
+</ol>
+<p>Sweet workflow: Opus for architecture/planning, then Sonnet (Shift+Tab) for implementation. CLAUDE.md keeps rules consistent across both.</p>
+<p>When Claude loops or gets stuck — don't double down.
+Clear the chat (/clear) for fresh start.<br />
+Simplify: break into tiny steps.<br />
+Show: give a minimal example of desired output. Reframe the problem entirely.<br />
+Spot the loop after 2–3 failed explanations — more words will not fix it. Change approach instead.</p>
+<p>If you want to be more advanced:</p>
+<p>Use: MCP, hooks, custom commands.</p>
+<ol>
+<li>MCP connects Claude to external tools (Slack, GitHub, DBs, APIs) — no more manual copy-paste.</li>
+<li>Hooks run code before/after actions (auto-Prettier, type-check).</li>
+<li>Custom slash commands: drop MD files in .claude/commands/ for repeatable workflows (e.g., /review, /deploy). If you are on Pro/Max, experiment — new features drop often. Retry what failed last month.</li>
+</ol>
+<p>Level up further: build systems, not one-offs in the long run.<br />
+Use -p (headless) mode to script Claude: run prompts non-interactively, pipe outputs, chain with bash, automate PR reviews or docs.</p>
+<p>Log mistakes → improve CLAUDE.md/hooks → Claude gets better next time.<br />
+This flywheel compounds fast. Enterprises already use it for auditable, improving automation.</p>
+<p>So, folks, here is the quick recap — the levers that matter most:</p>
+<ul>
+<li>Think/plan first</li>
+<li>Sharp, short CLAUDE.md with "why"</li>
+<li>Scope chats tightly + reset context proactively</li>
+<li>Specific prompts + constraints</li>
+<li>Experiment with MCP/hooks/commands</li>
+<li>Build automated systems</li>
+</ul>
+<p>Modern AI coding is capable when used right.<br />
+Apply these patterns to your projects — ship cleaner code faster.</p>
+<p>If this helped, drop a reply. More AI dev tips coming - follow along.</p>
+
+      </div>
+      
+      
+    </main>
+  <script src="/myLocalWorld/markpub_static/js/script.js"></script>
+  
+  <footer>
+    <div class="foot">
+      <footer class="bg-gray-100 py-8 mt-12">
+  <div class="text-center text-gray-600 space-y-2">
+    
+    <div><strong class="font-semibold text-gray-800">Home World</strong> by (oh no) mr. bill.</div>
+    
+    
+    <div>Central repository at <a href="https://github.com/band/homeworld">homeworld</a>.</div>
+    
+    
+    <div>Licensed under <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</div>
+    
+    <div class="text-sm italic">Site last updated on Monday, January 19, 2026 at 15:28 UTC.</div>
+  </div>
+</footer>
+    </div>
+  </footer>
+  </body>
+</html>
