@@ -15,3 +15,7 @@ cf. [[Italo Calvino - notes on Six Memos]]
 
 ## 2024-11-01
 - iA Writer testing  
+
+## 2026-07-07  
+- Magit testing  
+  (of course, I am not sure what the testing is for ....)  
